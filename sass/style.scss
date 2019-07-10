@@ -1,0 +1,54 @@
+div.anim1 {
+  width: 50px;
+  height: 72px;
+  background-image: url('../img/sprites/linux.png');
+  animation: moveX 1s steps(10) infinite;
+}
+
+div.anim2 {
+  width: 118.333px;
+  height: 118.333px;
+  background-image: url("../img/sprites/monster.png");
+  animation: playX 1s steps(6) infinite,
+              playY 3s steps(3) infinite;
+}
+
+div.anim3 {
+  width: 100px;
+  height: 100px;
+  background-image: url("../img/sprites/hearts.png");
+  animation: hearts 1s steps(29) infinite;
+  //transform: scale(2);
+}
+
+div.anim4 {
+  width: 179px;
+  height: 325px;
+  background-image: url("../img/sprites/capguy-walk-1472.png");
+  animation: capguy 1s steps(8) infinite;
+}
+
+@keyframes moveX {
+  from { background-position-x: 0px; }
+  to { background-position-x: -500px; }
+}
+
+@keyframes playX {
+  from { background-position-x: 0px; }
+  to { background-position-x: -710px; }
+}
+
+@keyframes playY {
+  from { background-position-y: 0px; }
+  to { background-position-y: -355px; }
+}
+
+@keyframes hearts {
+  from { background-position-x: 0px; }
+  to { background-position-x: -2900px;}
+}
+
+@keyframes capguy {
+  from { background-position-x: 0px; }
+  to { background-position-x: -1472px; }
+}
